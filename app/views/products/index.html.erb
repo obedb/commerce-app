@@ -1,0 +1,24 @@
+<h1> This is the list of staff </h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Price</td>
+    <td>Description</td>
+    <td>Image</td>
+  </tr>
+
+  <% @product.each do |all_product| %>
+
+  <tr>
+    <td> <%= all_product.name %> </td>
+    <td> <%= all_product.price %> </td>
+    <td> <%= all_product.description %> </td>
+    <td> <img scr="<%= all_product.image %>"> </td>
+
+  </tr>
+
+  <% end %>
+
+
+</table>
